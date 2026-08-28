@@ -1,0 +1,120 @@
+# ==================
+# Go
+# ==================
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+expense-tracker-api/main
+
+# Test binary
+*.test
+
+# Coverage
+*.out
+coverage.html
+
+# Dependency
+vendor/
+go.work
+go.work.sum
+
+# ==================
+# Environment
+# ==================
+.env
+.env.local
+.env.production
+.env.*.local
+
+# ==================
+# IDE
+# ==================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.iml
+.local/
+.classpath
+.project
+.settings/
+
+# ==================
+# OS
+# ==================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ==================
+# Build
+# ==================
+build/
+dist/
+bin/
+
+# ==================
+# Logs
+# ==================
+*.log
+logs/
+
+# ==================
+# Android
+# ==================
+# Built application files
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+
+# Gradle files
+.gradle/
+build/
+local.properties
+
+# Android Studio
+*.hprof
+.idea/
+*.iml
+
+# Signing files
+*.jks
+*.keystore
+
+# Google Services
+google-services.json
+
+# NDK
+obj/
+.externalNativeBuild/
+.cxx/
+
+# ==================
+# Docker
+# ==================
+docker-compose.override.yml
+
+# ==================
+# Temporary
+# ==================
+tmp/
+temp/
+*.tmp
+*.bak

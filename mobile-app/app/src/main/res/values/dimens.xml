@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Margins -->
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">12dp</dimen>
+    <dimen name="margin_large">20dp</dimen>
+    <dimen name="margin_page">24dp</dimen>
+
+    <!-- Padding -->
+    <dimen name="padding_page">20dp</dimen>
+    <dimen name="padding_card">16dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="text_size_heading">24sp</dimen>
+    <dimen name="text_size_title">18sp</dimen>
+    <dimen name="text_size_body">14sp</dimen>
+    <dimen name="text_size_caption">12sp</dimen>
+
+    <!-- Image sizes -->
+    <dimen name="image_photo">40dp</dimen>
+    <dimen="image_avatar">30dp</dimen>
+
+</resources>

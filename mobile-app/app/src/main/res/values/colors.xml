@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Colors -->
+    <color name="colorPrimary">#1A1A2E</color>
+    <color name="colorPrimaryVariant">#141422</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorSecondary">#8BC34A</color>
+    <color name="colorOnSecondary">#000000</color>
+    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorTextPrimary">#1A1A2E</color>
+    <color name="colorTextSecondary">#666666</color>
+    <color name="colorError">#F44336</color>
+    <color name="colorSuccess">#4CAF50</color>
+
+</resources>

@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- App name -->
+    <string name="app_name">Expense Tracker</string>
+
+    <!-- Transaction Types -->
+    <string-array name="transaction_types">
+        <item>DEBIT</item>
+        <item>CREDIT</item>
+    </string-array>
+
+    <!-- Expense Categories -->
+    <string-array name="expense_categories">
+        <item>Shopping</item>
+        <item>Groceries</item>
+        <item>Recharge</item>
+        <item>Utilities</item>
+        <item>Food</item>
+        <item>Travel</item>
+        <item>Medical</item>
+        <item>Education</item>
+        <item>Entertainment</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- Payment Methods -->
+    <string-array name="payment_methods">
+        <item>UPI</item>
+        <item>Cash</item>
+        <item>Internet Banking</item>
+        <item>Credit Card</item>
+    </string-array>
+
+    <!-- UPI Apps -->
+    <string-array name="upi_apps">
+        <item>Google Pay</item>
+        <item>PhonePe</item>
+        <item>Paytm</item>
+        <item>Amazon Pay</item>
+        <item>BHIM</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>
