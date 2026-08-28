@@ -5,12 +5,12 @@ RUN apk add --no-cache git
 
 WORKDIR /app
 
-# Copy go mod files
-COPY go.mod go.sum ./
+# Copy go mod files from subdirectory
+COPY expense-tracker-api/go.mod expense-tracker-api/go.sum ./
 RUN go mod download
 
-# Copy source code
-COPY . .
+# Copy source code from subdirectory
+COPY expense-tracker-api/ .
 
 # Build the binary
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main .
