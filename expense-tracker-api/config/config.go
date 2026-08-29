@@ -36,6 +36,26 @@ func getEnv(key, defaultValue string) string {
 	return defaultValue
 }
 
+func containsParam(url, param string) bool {
+	for i := 0; i < len(url)-len(param); i++ {
+		if url[i] == '?' || url[i] == '&' {
+			if url[i+1:i+len(param)+1] == param+"=" {
+				return true
+			}
+		}
+	}
+	return false
+}
+
+func containsChar(s string, c byte) bool {
+	for i := 0; i < len(s); i++ {
+		if s[i] == c {
+			return true
+		}
+	}
+	return false
+}
+
 func getEnvAsInt(key string, defaultValue int) int {
 	if val, exists := os.LookupEnv(key); exists {
 		var v int
@@ -74,6 +94,15 @@ func LoadConfig() *Config {
 		}
 
 		dbURL := getEnv("DATABASE_URL", "postgres://postgres:postgres@localhost:5432/expense_tracker?sslmode=disable")
+
+		pgSSLMode := getEnv("PGSSLMODE", "")
+		if pgSSLMode != "" && !containsParam(dbURL, "sslmode") {
+			separator := "&"
+			if !containsChar(dbURL, '?') {
+				separator = "?"
+			}
+			dbURL = dbURL + separator + "sslmode=" + pgSSLMode
+		}
 
 		pool, err := pgxpool.New(context.Background(), dbURL)
 		if err != nil {
